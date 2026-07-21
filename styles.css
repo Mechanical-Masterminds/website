@@ -1,0 +1,6 @@
+/*Sticky Header*/
+header {
+    position:sticky;
+    top:0;
+    background-color:#6facdc
+}
