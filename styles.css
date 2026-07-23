@@ -1,7 +1,4 @@
-/*Sticky Header*/
-header {
-    position:sticky;
-    top:0;
-    background:#6facdc
-    
+body {
+    margin:0;
+    padding:0;
 }
