@@ -1,6 +1,6 @@
 
 /*---------------------
------BASE  STYLES------
+-----HEADER STYLES-----
 ---------------------*/
 
 body {
@@ -13,23 +13,43 @@ header {
     top:0px;
     padding:10px 20px;
     background:#6facdc;
-    display:flex;
-    justify-content:space-between;
     align-items:center;
     
 }
 
-header h1 {
+#banner {
+    text-decoration: none;
+    color: #f9fbfc;
+    font-family: Arial, sans-serif;
+    font-size:22px;
+    text-align:center;
+}
+
+.header-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.header-container h1 {
     text-align:left;
     font-size:30px;
     color:#f9fbfc;
     font-family: Arial, sans-serif;
+    margin:0px;
 }
 
-header a {
+
+.header-container a {
     text-decoration: none;
     color: #f9fbfc;
     font-family: Arial, sans-serif;
     font-size:20px;
     text-align:right;
 }
+
+/*---------------------
+--Page-Specific Styles-
+---------------------*/
