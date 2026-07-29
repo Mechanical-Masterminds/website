@@ -1,0 +1,30 @@
+body {
+    background-color:#fafbfc;
+}
+
+#left {
+    width:45%;
+    float:left;
+    text-align:center;
+}
+
+#right {
+    width:45%;
+    float:right;
+    text-align:center;
+}
+
+        #ContactUs {
+            color:#ffffff;
+            text-align: center;
+            font-size:60px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 100px;
+        }
+
+        #TextInBox {
+            color:#000000;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            text-align: right;
+        }
