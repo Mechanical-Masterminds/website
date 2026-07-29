@@ -2,16 +2,23 @@ body {
     background-color:#fafbfc;
 }
 
-#left {
-    width:45%;
-    float:left;
-    text-align:center;
+.row {
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:50px;
 }
 
-#right {
+.box {
     width:45%;
-    float:right;
-    text-align:center;
+}
+
+.box h2 {
+    margin-bottom:10px;
+}
+
+.box p {
+    text-align:left;
 }
 
         #ContactUs {
