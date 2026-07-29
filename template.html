@@ -1,187 +1,189 @@
 <!DOCTYPE html>
-<head>
-    <title>Mechanical Masterminds</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta property="og:title" content="Blank Page" />
-    <meta property="og:description" content="Visit our website!" />
-    <meta property="og:url" content="https://demo.team30329.org" />
-    <style>
-        /*---------------------
-        -----HEADER STYLES-----
-        ---------------------*/
+<html>
+    <head>
+        <title>Mechanical Masterminds</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta property="og:title" content="Blank Page" />
+        <meta property="og:description" content="Visit our website!" />
+        <meta property="og:url" content="https://demo.team30329.org" />
+        <style>
+            /*---------------------
+            -----HEADER STYLES-----
+            ---------------------*/
 
-        body {
-            margin:0px;
-            padding:0px;
-        }
-
-        header {
-            position:sticky;
-            top:0px;
-            padding:10px 20px;
-            background:#78a9d4; /* #6facdc */
-            align-items:center;
-            
-        }
-
-        #banner {
-            text-decoration: none;
-            color: #f9fbfc;
-            font-family: Arial, sans-serif;
-            font-size:19px;
-            text-align:center;
-        }
-
-        .header-container {
-            display:flex;
-            justify-content:space-between;
-            align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
-            margin-top:15px;
-            margin-bottom:10px;
-        }
-
-        .header-container h1 {
-            text-align:left;
-            font-size:25px;
-            color:#f9fbfc;
-            font-family: Arial, sans-serif;
-            margin:0px;
-        }
-
-
-        .header-container a {
-            text-decoration: none;
-            color: #f9fbfc;
-            font-family: Arial, sans-serif;
-            font-size:17px;
-            text-align:right;
-            padding-left:10px;
-            padding-right:10px;
-        }
-
-        .navlinks {
-            display:flex;
-            gap:15px;
-            align-items:baseline;
-            flex-wrap:wrap;
-            justify-content:center;
-        }
-
-        .dropdown {
-            position:relative;
-            display:inline-block;
-        }
-
-        .dropdown-content {
-            display:none;
-            position:absolute;
-            background-color:#6facdc;
-            min-width:180px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
-            z-index:10;
-            border-radius:4px;
-            top:100%;
-            left:0;
-            padding-top:5px;
-        }
-
-        .dropdown-content a {
-            display:block;
-            text-align:left;
-            padding:10px 15px;
-            font-size: 16px;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #5591be;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-
-        /* Mobile Reframing */
-
-        @media (max-width:768px) {
-            #banner {
-                display: none;
-            }
-            
-            .header-container {
-                flex-direction: column;
-                align-items: center;
+            body {
+                margin:0px;
+                padding:0px;
             }
 
-            .navlinks {
-                flex-direction:row;
-                flex-wrap:wrap;
-                justify-content:center;
+            header {
+                position:sticky;
+                top:0px;
+                padding:10px 20px;
+                background:#78a9d4; /* #6facdc */
                 align-items:center;
-                gap:10px;
-                margin-top:20px;
                 
             }
 
-            .dropdown {
-                width:auto;
+            #banner {
+                text-decoration: none;
+                color: #f9fbfc;
+                font-family: Arial, sans-serif;
+                font-size:19px;
                 text-align:center;
+            }
+
+            .header-container {
+                display:flex;
+                justify-content:space-between;
+                align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
+                margin-top:15px;
+                margin-bottom:10px;
             }
 
             .header-container h1 {
-                text-align:center;
+                text-align:left;
+                font-size:25px;
+                color:#f9fbfc;
+                font-family: Arial, sans-serif;
+                margin:0px;
             }
 
 
-        }
-    </style>
-</head>
-<body>
-    <header>
-       <h1 id="banner">Join us in powering our next big season! <a href="#">Donate here!</a></h1>
-        <div class="header-container">
-            <h1>Mechanical Masterminds</h1>
-            <nav class="navlinks">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Outreach ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#">25-26 Outreach</a>
-                        <a href="#">Offseason</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Seasons ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#">25-26 DECODE</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Donate/Sponsors ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#">Sponsorship Tiers</a>
-                        <a href="#">25-26 Sponsors</a>
-                        <a href="#">26-27 Sponsors</a>
-                    </div>
-                </div>
-                <a href="#">B&B</a>
-                <a href="#">Contact Us</a>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Community Pages ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#">FTC Scout</a>
-                        <a href="#">FTC Events</a>
-                        <a href="#">Orange Alliance</a>
-                        <a href="#">FTC Videos</a>
-                        
-                    </div>  
-                </div>
-                <a href="#">Log In</a>
+            .header-container a {
+                text-decoration: none;
+                color: #f9fbfc;
+                font-family: Arial, sans-serif;
+                font-size:17px;
+                text-align:right;
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+            .navlinks {
+                display:flex;
+                gap:15px;
+                align-items:baseline;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .dropdown {
+                position:relative;
+                display:inline-block;
+            }
+
+            .dropdown-content {
+                display:none;
+                position:absolute;
+                background-color:#6facdc;
+                min-width:180px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+                z-index:10;
+                border-radius:4px;
+                top:100%;
+                left:0;
+                padding-top:5px;
+            }
+
+            .dropdown-content a {
+                display:block;
+                text-align:left;
+                padding:10px 15px;
+                font-size: 16px;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #5591be;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display:block;
+            }
+
+            /* Mobile Reframing */
+
+            @media (max-width:768px) {
+                #banner {
+                    display: none;
+                }
                 
-            </nav>
-        </div>
+                .header-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .navlinks {
+                    flex-direction:row;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    align-items:center;
+                    gap:10px;
+                    margin-top:20px;
+                    
+                }
+
+                .dropdown {
+                    width:auto;
+                    text-align:center;
+                }
+
+                .header-container h1 {
+                    text-align:center;
+                }
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1 id="banner">Join us in powering our next big season! <a href="#">Donate here!</a></h1>
+            <div class="header-container">
+                <h1>Mechanical Masterminds</h1>
+                <nav class="navlinks">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Outreach ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">25-26 Outreach</a>
+                            <a href="#">Offseason</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Seasons ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">25-26 DECODE</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Donate/Sponsors ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">Sponsorship Tiers</a>
+                            <a href="#">25-26 Sponsors</a>
+                            <a href="#">26-27 Sponsors</a>
+                        </div>
+                    </div>
+                    <a href="#">B&B</a>
+                    <a href="#">Contact Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Community Pages ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">FTC Scout</a>
+                            <a href="#">FTC Events</a>
+                            <a href="#">Orange Alliance</a>
+                            <a href="#">FTC Videos</a>
+                            
+                        </div>  
+                    </div>
+                    <a href="#">Log In</a>
+                    
+                </nav>
+            </div>
+            
         
-       
-    </header>
-    <p>Text goes here.</p>
-</body>
+        </header>
+        <p>Text goes here.</p>
+    </body>
+</html>
