@@ -1,8 +1,15 @@
-
-
-/*---------------------
---Page-Specific Styles-
----------------------*/
 body {
     background-color:#fafbfc;
+}
+
+#left {
+    width:45%;
+    float:left;
+    text-align:center;
+}
+
+#right {
+    width:45%;
+    float:right;
+    text-align:center;
 }
