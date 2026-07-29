@@ -21,17 +21,16 @@ body {
     text-align:left;
 }
 
-        #ContactUs {
-            color:#000000;
-            text-align: center;
-            font-size:60px;
-            font-family: Arial, sans-serif;
-            margin-bottom: 100px;
-        }
+#ContactUs {
+    color:#000000;
+    text-align: center;
+    font-size:60px;
+    font-family: Arial, sans-serif;
+}
 
-        #TextInBox {
-            color:#000000;
-            font-size: 17px;
-            font-family: Arial, sans-serif;
-            text-align: right;
-        }
+#TextInBox {
+    color:#000000;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+}
