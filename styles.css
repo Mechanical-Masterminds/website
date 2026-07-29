@@ -1,7 +1,9 @@
-body {
+body >:not(header) {
     background-color:#fafbfc;
     font-family:Arial, sans-serif;
-    margin:50px;
+    margin-left:25px;
+    margin-right:25px;
+    
 }
 
 /*.left {
@@ -23,6 +25,7 @@ body {
     justify-content:space-between;
     gap:40px;
     margin-bottom:50px;
+    
 }
 
 .box {
