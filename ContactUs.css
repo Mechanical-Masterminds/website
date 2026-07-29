@@ -24,13 +24,15 @@ body {
 #ContactUs {
     color:#000000;
     text-align: center;
-    font-size:60px;
+    font-size:40px;
     font-family: Arial, sans-serif;
+    margin-bottom: 100px;
 }
 
 #TextInBox {
     color:#000000;
     font-size: 17px;
     font-family: Arial, sans-serif;
-    text-align: right;
+    text-align: left;
+    margin-left: 200px;
 }
