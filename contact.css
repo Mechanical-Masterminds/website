@@ -2,29 +2,35 @@ body {
     background-color:#fafbfc;
 }
 
-#left {
-    width:45%;
-    float:left;
-    text-align:center;
+.row {
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:50px;
 }
 
-#right {
+.box {
     width:45%;
-    float:right;
-    text-align:center;
 }
 
-        #ContactUs {
-            color:#ffffff;
-            text-align: center;
-            font-size:60px;
-            font-family: Arial, sans-serif;
-            margin-bottom: 100px;
-        }
+.box h2 {
+    margin-bottom:10px;
+}
 
-        #TextInBox {
-            color:#000000;
-            font-size: 17px;
-            font-family: Arial, sans-serif;
-            text-align: right;
-        }
+.box p {
+    text-align:left;
+}
+
+#ContactUs {
+    color:#000000;
+    text-align: center;
+    font-size:60px;
+    font-family: Arial, sans-serif;
+}
+
+#TextInBox {
+    color:#000000;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+}
