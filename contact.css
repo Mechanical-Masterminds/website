@@ -39,6 +39,8 @@ body {
 #Image {
     width: 854px;
     height: 480px;
+    border: 10px darkgreen;
+    border-radius: 20px;
 }
 
 .TextAndImage {
