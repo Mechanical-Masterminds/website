@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mechanical Masterminds</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta property="og:title" content="Blank Page" />
-    <meta property="og:description" content="Visit our website!" />
-    <meta property="og:url" content="https://demo.team30329.org" />
-    <style>
-        /*---------------------
-        -----HEADER STYLES-----
-        ---------------------*/
+    <head>
+        <title>Mechanical Masterminds</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta property="og:title" content="Blank Page" />
+        <meta property="og:description" content="Visit our website!" />
+        <meta property="og:url" content="https://demo.team30329.org" />
 
-        body {
-            margin:0px;
-            padding:0px;
-        }
+        <style>
+            /*---------------------
+            -----HEADER STYLES-----
+            ---------------------*/
 
-        header {
-            position:sticky;
-            top:0px;
-            padding:10px 20px;
-            background:#78a9d4; /* #6facdc */
-            align-items:center;
             
-        }
 
-        #banner {
-            text-decoration: none;
-            color: #f9fbfc;
-            font-family: Arial, sans-serif;
-            font-size:19px;
-            text-align:center;
-        }
-
-        .header-container {
-            display:flex;
-            justify-content:space-between;
-            align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
-            margin-top:15px;
-            margin-bottom:10px;
-        }
-
-        .header-container h1 {
-            text-align:left;
-            font-size:25px;
-            color:#f9fbfc;
-            font-family: Arial, sans-serif;
-            margin:0px;
-        }
-
-
-        .header-container a {
-            text-decoration: none;
-            color: #f9fbfc;
-            font-family: Arial, sans-serif;
-            font-size:17px;
-            text-align:right;
-            padding-left:10px;
-            padding-right:10px;
-        }
-
-        .navlinks {
-            display:flex;
-            gap:15px;
-            align-items:baseline;
-            flex-wrap:wrap;
-            justify-content:center;
-        }
-
-        .dropdown {
-            position:relative;
-            display:inline-block;
-        }
-
-        .dropdown-content {
-            display:none;
-            position:absolute;
-            background-color:#6facdc;
-            min-width:180px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
-            z-index:10;
-            border-radius:4px;
-            top:100%;
-            left:0;
-            padding-top:5px;
-        }
-
-        .dropdown-content a {
-            display:block;
-            text-align:left;
-            padding:10px 15px;
-            font-size: 16px;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #5591be;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-
-        /* Mobile Reframing */
-
-        @media (max-width:768px) {
-            #banner {
-                display: none;
-            }
-            
-            .header-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navlinks {
-                flex-direction:row;
-                flex-wrap:wrap;
-                justify-content:center;
+            header {
+                position:sticky;
+                top:0px;
+                padding:10px 20px;
+                background:#78a9d4; /* #6facdc */
                 align-items:center;
-                gap:10px;
-                margin-top:20px;
                 
             }
 
-            .dropdown {
-                width:auto;
+            #banner {
+                text-decoration: none;
+                color: #f9fbfc;
+                font-family: Arial, sans-serif;
+                font-size:19px;
                 text-align:center;
+            }
+
+            .header-container {
+                display:flex;
+                justify-content:space-between;
+                align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
+                margin-top:15px;
+                margin-bottom:10px;
             }
 
             .header-container h1 {
-                text-align:center;
+                text-align:left;
+                font-size:25px;
+                color:#f9fbfc;
+                font-family: Arial, sans-serif;
+                margin:0px;
             }
 
 
-        }
-    </style>
-</head>
-<body>
-    <header>
+            .header-container a {
+                text-decoration: none;
+                color: #f9fbfc;
+                font-family: Arial, sans-serif;
+                font-size:17px;
+                text-align:right;
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+            .navlinks {
+                display:flex;
+                gap:15px;
+                align-items:baseline;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .dropdown {
+                position:relative;
+                display:inline-block;
+            }
+
+            .dropdown-content {
+                display:none;
+                position:absolute;
+                background-color:#6facdc;
+                min-width:180px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+                z-index:10;
+                border-radius:4px;
+                top:100%;
+                left:0;
+                padding-top:5px;
+            }
+
+            .dropdown-content a {
+                display:block;
+                text-align:left;
+                padding:10px 15px;
+                font-size: 16px;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #5591be;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display:block;
+            }
+
+            /* Mobile Reframing */
+
+            @media (max-width:768px) {
+                #banner {
+                    display: none;
+                }
+                
+                .header-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .navlinks {
+                    flex-direction:row;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    align-items:center;
+                    gap:10px;
+                    margin-top:20px;
+                    
+                }
+
+                .dropdown {
+                    width:auto;
+                    text-align:center;
+                }
+
+                .header-container h1 {
+                    text-align:center;
+                }
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
         <h1 id="banner">Join us in powering our next big season! <a href="#">Donate here!</a></h1>
             <div class="header-container">
                 <h1>Mechanical Masterminds</h1>
@@ -184,6 +182,80 @@
             
         
         </header>
-    <p>Text goes here.</p>
-</body>
+        <h1>About Our Team & Team Members</h1>
+        <div class="row">
+            <div class="box image">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Adi S.</b><br>Team Leader<br>Software Member<br><br>Grade 10</figcaption>
+                </figure>
+            </div>
+            <div class="box">
+                <p>Mechanical Masterminds (FTC Team 30329) 
+                is currently in our second season of the FIRST 
+                Tech Challenge. Now in our fifth year as a team, 
+                we continue to grow our skills in engineering, 
+                programming, and teamwork while tackling the 
+                challenges of competitive robotics. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <p>Last season, our hard work and dedication 
+                were recognized at our qualifiers, where we 
+                earned both the Control Award and the Innovate 
+                Award, advancing to the regional competition. 
+                As we move forward, we remain committed to 
+                pushing our creativity, improving our robot design, 
+                and inspiring others through STEM and robotics.</p>
+            </div>
+            <div class="box image">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Yuvraj G.</b><br>Team Deputy<br>Hardware Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box image edit">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Arnav P.</b><br>Software Lead Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+            <div class="box image edit">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Dominic N.</b><br>Hardware Lead Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+            <div class="box image edit">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Jenna S.</b><br>Outreach Lead Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+            <div class="box image edit">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Shriya S.</b><br>CAD Lead Member<br>Outreach Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box image">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Patrick Q.</b><br>Mechanical Integrator<br>Software Member<br>Hardware Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+            <div class="box image">
+                <figure>
+                    <img src="media/images/placeholderimages/placeholder.webp" class="personpic"><br>
+                    <figcaption><b>Pracheth V.</b><br>Web Architect<br>Software Member<br><br>Grade 9</figcaption>
+                </figure>
+            </div>
+        </div>
+        <h1>Upcoming Events</h1><br>
+        
 </html>

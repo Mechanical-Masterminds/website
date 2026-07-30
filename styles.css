@@ -30,6 +30,13 @@ body >:not(header) {
 
 .box {
     width:45%;
+    align-items:center;
+    display:flex;
+}
+
+.image {
+    display:flex;
+    justify-content:center;
 }
 
 .box h2 {
@@ -44,4 +51,24 @@ body >:not(header) {
     padding-left:5%;
     padding-right:5%;
     width:25%;
+}
+
+.personpic {
+    display:block;
+    width:289px;
+    height:282px;
+}
+
+figure {
+    text-align:center;
+    margin:0;
+}
+
+figcaption {
+    margin-top:10px;
+    font-size:20px;
+}
+
+.edit {
+    flex:1 !important;
 }
