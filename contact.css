@@ -39,7 +39,7 @@ body {
 #Image {
     width: 854px;
     height: 480px;
-    border: 10px #30CF90;
+    border: 10px solid #30CF90;
     border-radius: 20px;
 }
 
