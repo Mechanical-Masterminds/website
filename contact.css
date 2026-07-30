@@ -1,5 +1,5 @@
 body {
-    background-color:#fafbfc;
+    background-color:#f4dfba;
 }
 
 .row {
@@ -30,27 +30,27 @@ body {
 
 #TextInBox {
     color:#000000;
-    font-size: 19px;
+    font-size: 17px;
     font-family: Arial, sans-serif;
     text-align: left;
-    background-color: #f4f4f4cb;   
-    border: 10px solid #ddbe0e;   
+    background-color: #f5ecdecb;   
+    border: 10px solid #0c6be0cb;   
     border-radius: 20px;
     padding: 15px;               
 }
 
 hr {
     border: none;               
-    height: 3px;                
+    height: 8px;                
     background-color: #0c6be0cb;  
     width: 80%;                 
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
 }
 
 #Image {
     width: 854px;
     height: 480px;
-    border: 10px solid #ddbe0e;
+    border: 10px solid #0c6be0cb;
     border-radius: 20px;
 }
 
