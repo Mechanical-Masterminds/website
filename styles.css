@@ -51,6 +51,7 @@ body >:not(header) {
     padding-left:5%;
     padding-right:5%;
     width:25%;
+    flex: 0 0 300px 300px;
 }
 
 .personpic {
@@ -70,5 +71,8 @@ figcaption {
 }
 
 .edit {
-    flex:1 !important;
+    width: auto !important;
+    flex: 1 !important;
+    display:flex;
+    flex-direction:column;
 }
