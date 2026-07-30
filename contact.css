@@ -34,5 +34,15 @@ body {
     font-size: 17px;
     font-family: Arial, sans-serif;
     text-align: left;
-    margin-left: 850px;
+}
+
+#Image {
+    width: 854px;
+    height: 480px;
+}
+
+.TextAndImage {
+    display: flex;       
+    align-items: center; 
+    gap: 20px;
 }
