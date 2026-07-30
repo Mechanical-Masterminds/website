@@ -26,7 +26,6 @@ body {
     text-align: center;
     font-size:40px;
     font-family: Arial, sans-serif;
-    margin-bottom: 100px;
 }
 
 #TextInBox {
@@ -35,15 +34,23 @@ body {
     font-family: Arial, sans-serif;
     text-align: left;
     background-color: #f4f4f4cb;   
-    border: 2px solid #333333;   
+    border: 10px solid #ddbe0e;   
     border-radius: 20px;
     padding: 15px;               
+}
+
+hr {
+    border: none;               
+    height: 3px;                
+    background-color: #0c6be0cb;  
+    width: 80%;                 
+    margin: 20px auto;
 }
 
 #Image {
     width: 854px;
     height: 480px;
-    border: 10px solid #30CF90;
+    border: 10px solid #ddbe0e;
     border-radius: 20px;
 }
 
