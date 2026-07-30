@@ -1,6 +1,6 @@
 body {
     background-color:#f4dfba;
-    font-family: Arial, sans-serif;
+    font-family: Segoe UI, system-ui, sans-serif;
 }
 
 .row {
@@ -14,6 +14,10 @@ body {
     width:45%;
 }
 
+#paditup {
+    padding-left: 10px;
+}
+
 .box h2 {
     margin-bottom:10px;
 }
@@ -23,7 +27,7 @@ body {
 }
 
 #ContactUs {
-    color:#000000;
+    color:#0c6be0cb;
     text-align: center;
     font-size:40px;
 }
@@ -62,7 +66,7 @@ hr {
     border-radius: 5px;
     height: 5px;
     background-color: #0c6be0cb;
-    width: 50%;        
+    width: 121%;        
     margin: 15px 0;
 }
 #long{
@@ -70,21 +74,33 @@ hr {
     border-radius: 5px;             
     height: 5px;                
     background-color: #0c6be0cb;  
-    width: 93%;                 
+    width: 97.5%;                 
     margin: 20px auto;
 }
 #bruh {
     border: none;               
-    height: 3px;                
+    height: 4.5px;                
     background-color: #073c7d;  
     width: 100%;                 
     margin: 20px auto;
 }
 
+#bruhtop {
+    border: none;               
+    height: 4.5px;                
+    background-color: #073c7d;  
+    width: 100%;                 
+    margin: 20px auto;
+    margin-top: -10px;
+}
+
 #cool {
-    border: 3px solid #073c7d;
-    border-radius: 20px;
-    padding: 6px;
+    border: 4.5px solid #073c7d;
+    border-radius: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
     color: white;
     text-decoration: none;
 }
@@ -126,4 +142,8 @@ hr {
     flex-direction: column;
     align-items: center;
     min-width: 275px; 
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0c6be0cb #f4dfba; /* handle_color track_color */
 }
