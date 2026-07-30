@@ -28,7 +28,7 @@ body {
     font-size:40px;
 }
 
-#TextInBox {
+.TextInBox {
     color:#000000;
     font-size: 17px;
     text-align: left;
@@ -37,15 +37,42 @@ body {
     border-radius: 20px;
     padding: 15px;               
 }
-
+#TextInBoxLeft {
+    color: #000000;
+    font-size: 17px;
+    text-align: left;
+    background-color: #f5ecdecb;
+    border: 10px solid #0c6be0cb;
+    border-radius: 20px;
+    padding: 15px;
+    flex-grow: 1;
+    margin: 0;     
+}
 hr {
     border: none;               
     height: 8px;                
-    background-color: #0c6be0cb;  
+    background-color: #0c6be0cb; 
+    border-radius: 10px; 
     width: 80%;                 
     margin: 20px auto 50px auto;
 }
 
+#smol{
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #0c6be0cb;
+    width: 50%;        
+    margin: 15px 0;
+}
+#long{
+    border: none;  
+    border-radius: 5px;             
+    height: 5px;                
+    background-color: #0c6be0cb;  
+    width: 93%;                 
+    margin: 20px auto;
+}
 #bruh {
     border: none;               
     height: 3px;                
@@ -67,6 +94,7 @@ hr {
     height: 480px;
     border: 10px solid #0c6be0cb;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .TextAndImage {
@@ -75,16 +103,27 @@ hr {
     gap: 20px;
 }
 
-.Button {
-    margin-top: 50px;
-    margin-bottom: 50px; 
-    margin-left:925px;
+#TextAndButtons{
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    width: 93%;        
+    margin: 0 auto;
+}
+
+#TopButton, #BottomButton {
     width: 275px;
-    background-color: #0c6be0cb; 
-    color: #f4dfba;              
-    padding: 12px 24px;       
-    border: none;              
-    border-radius: 10px;        
-    font-size: 16px;           
+    background-color: #0c6be0cb;
+    color: #f4dfba;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
+}
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 275px; 
 }
