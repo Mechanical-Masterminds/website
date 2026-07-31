@@ -1,0 +1,228 @@
+<!-- This is preservation for my goofy ahh work bro-->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Mechanical Masterminds</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta property="og:title" content="Blank Page" />
+    <meta property="og:description" content="Visit our website!" />
+    <meta property="og:url" content="https://demo.team30329.org" />
+    <style>
+        /*---------------------
+        -----HEADER STYLES-----
+        ---------------------*/
+
+        body {
+            margin:0px;
+            padding:0px;
+        }
+
+        header {
+            position:sticky;
+            top:0px;
+            padding:10px 20px;
+            background:#78a9d4; /* #6facdc */
+            align-items:center;
+        }
+       
+        #banner {
+            text-decoration: none;
+            color: #f9fbfc;
+            font-family: Segoe UI, system-ui, sans-serif;
+            font-size:19px;
+            text-align:center;
+        }
+
+        .header-container {
+            display:flex;
+            justify-content:space-between;
+            align-items:baseline; /* Remove this line if no banner, otherwise doesn't look right */
+            margin-top:-24.5px;
+            margin-bottom:0px;
+            border: 4.5px solid #073c7d;
+            border-radius: 10px;
+        }
+
+        .header-container h1 {
+            text-align:left;
+            font-size:25px;
+            color:#f9fbfc;
+            font-family: Segoe UI, system-ui, sans-serif;
+            margin:0px;
+        }
+
+
+        .header-container a {
+            text-decoration: none;
+            color: #f9fbfc;
+            font-family: Segoe UI, system-ui, sans-serif;
+            font-size: 17px;
+            text-align:right;
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+        .navlinks {
+            display:flex;
+            gap: 0px;
+            align-items:baseline;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            justify-content:center;
+        }
+
+        .dropdown {
+            position:relative;
+            display:inline-block;
+        }
+
+        .dropdown-content {
+            display:none;
+            position:absolute;
+            background-color:#6facdc;
+            min-width:180px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+            z-index:10;
+            border-radius:4px;
+            top:100%;
+            left:0;
+            padding-top:5px;
+        }
+
+        .dropdown-content a {
+            display:block;
+            text-align:left;
+            padding:10px 15px;
+            font-size: 16px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #5591be;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+
+        /* Mobile Reframing */
+
+        @media (max-width:768px) {
+            #banner {
+                display: none;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navlinks {
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-items:center;
+                gap:10px;
+                margin-top:20px;
+                
+            }
+
+            .dropdown {
+                width:auto;
+                text-align:center;
+            }
+
+            .header-container h1 {
+                text-align:center;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hr id="bruhtop">
+        <h1 id="banner">Join us in powering our next big season! <a href="#" id="cool">Donate here!</a></h1>
+        <hr id="bruh">
+            <div class="header-container">
+                <h1 id="paditup">Mechanical Masterminds</h1>
+                <nav class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Outreach ▼</a>
+                        <div class="dropdown-content">
+                            <a href="outreach/2526outreach.html">25-26 Outreach</a>
+                            <a href="outreach/offseason.html">Offseason</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Seasons ▼</a>
+                        <div class="dropdown-content">
+                            <a href="seasons/decode.html">25-26 DECODE</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Donate/Sponsors ▼</a>
+                        <div class="dropdown-content">
+                            <a href="donate/sponsorshiptiers.html">Sponsorship Tiers</a>
+                            <a href="donate/2526sponsors.html">25-26 Sponsors</a>
+                            <a href="donate/2627sponsors.html">26-27 Sponsors</a>
+                        </div>
+                    </div>
+                    <a href="bnb.html">B&B</a>
+                    <a href="contact.html">Contact Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Community Pages ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">FTC Scout</a>
+                            <a href="#">FTC Events</a>
+                            <a href="#">Orange Alliance</a>
+                            <a href="#">FTC Videos</a>
+                            
+                        </div>  
+                    </div>
+                    <a href="#">Log In</a>
+                    
+                </nav>
+            </div>
+            
+        
+        </header>
+    <h1 id="ContactUs">Contact Us</h1>
+    <hr>
+    <div class="TextAndImage">
+    <img src = "media/images/placeholderimages/placeholder.webp" id = "Image">
+    <p class="TextInBox">
+        Contact Us:<br><br>
+
+        Outreach Team:<br><br>
+
+        jenna@team30329.org<br><br>
+
+        shriya@team30329.org<br><br>
+
+        Our Team: <br><br>
+
+        mechanicalmastermindsftc@gmail.com
+    </p>
+</div>
+<hr id="long">
+<div id="TextAndButtons">
+    <p id="TextInBoxLeft">
+        If you wan't to join our team or FIRST, <br><br>
+        use the buttons located to the right.
+    </p>   
+    <div id="right">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdm95mFJamOsQFvJufRDt-zMFxta82aOqDOkhSYQZuPAPNo4g/viewform" target="_blank" rel="noopener noreferrer">
+        <button type="button" id="TopButton">Joining Our Team</button>
+    </a>
+    <hr id="smol">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnh5U7uhqfwGFo-w5vjgkde7ZjgCOGX2tc_iYuO6rtzCoiGg/viewform" target="_blank" rel="noopener noreferrer">
+        <button type="button" Id="BottomButton">Joining FIRST</button>
+    </a>
+    </div> 
+</div> 
+<hr id="long">   
+</body>
+</html>

@@ -1,0 +1,181 @@
+/*This is preservation for css that may be apply for the whole website later on*/
+
+body {
+    background-color:#f4dfba;
+    font-family: Segoe UI, system-ui, sans-serif;
+}
+
+.row {
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.box {
+    width:45%;
+}
+
+#paditup {
+    padding-left: 10px;
+}
+
+.box h2 {
+    margin-bottom:10px;
+}
+
+.box p {
+    text-align:left;
+}
+
+#ContactUs {
+    color:#0c6be0cb;
+    text-align: center;
+    font-size:40px;
+}
+
+.TextInBox, #TextInBoxLeft {
+  color: #222222;            
+  background-color: #ffffff; 
+  border: 4px solid #0c6be0cb; 
+  border-radius: 12px;      
+  padding: 24px;             
+  box-shadow: 0px 8px 24px rgba(7, 60, 125, 0.15);
+}
+
+#TextInBoxLeft {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.TextInBox {
+  flex: 1 1 300px;
+  margin-right: 10px;  
+}
+
+hr {
+    border: none; 
+    border-top: 4.5px solid #0c6be0cb; 
+    border-radius: 10px;
+    width: 80%; 
+    margin: 40px auto; 
+}
+
+#smol{
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #0c6be0cb;
+    width: 121%;        
+    margin: 15px 0;
+}
+#long{
+    border: none;  
+    border-radius: 5px;             
+    height: 5px;                
+    background-color: #0c6be0cb;  
+    width: 97.5%;                 
+    margin: 20px auto;
+}
+#bruh {
+    border: none;               
+    height: 4.5px;                
+    background-color: #073c7d;  
+    width: 0.01%;                 
+    margin: 20px auto;
+    margin-top: 10px;
+}
+
+#bruhtop {
+    border: none;               
+    height: 4.5px;                
+    background-color: #073c7d;  
+    width: 100%;                 
+    margin: 20px auto;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+#cool {
+    border: 4.5px solid #073c7d;
+    border-radius: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#cool:hover {
+    color:#073c7d;
+}
+
+#Image {
+    flex: 1 1 500px;
+    max-width: 854px;  
+    height: auto; 
+    object-fit: cover; 
+    border: 10px solid #0c6be0cb; 
+    border-radius: 20px; 
+    box-shadow: 0px 12px 32px rgba(7, 60, 125, 0.2); 
+}
+
+#TextAndButtons{
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    width: 93%;        
+    margin: 0 auto;
+}
+
+#TopButton, #BottomButton {
+    width: 275px;
+    background-color: #0c6be0cb;
+    color: #f4dfba;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+}
+
+.TextAndImage {
+  display: flex; 
+  align-items: center; 
+  gap: 30px; 
+  flex-wrap: wrap; /* Allows mobile wrapping */
+}
+
+
+#TopButton:hover, #BottomButton:hover {
+  box-shadow: 0px 8px 15px #0c6be0cb;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 275px; 
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0c6be0cb #f4dfba; /* handle_color track_color */
+}
+
+header a {
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.3s ease; 
+}
+header a:hover, 
+.dropdown-content a:hover {
+  color: #073c7d !important; 
+  background-color: #f4dfba !important; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35) !important;
+  position: relative;
+  z-index: 15; 
+}
