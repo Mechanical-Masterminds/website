@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mechanical Masterminds</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Blank Page" />
+    <meta property="og:description" content="Visit our website!" />
+    <meta property="og:url" content="https://demo.team30329.org" />
+    <style>
+                /*--------------------- -----HEADER STYLES----- ---------------------*/
+  body { 
+    margin: 0px; 
+    padding: 0px; 
+  }
+  
+  header { 
+    position: sticky; 
+    top: 0px; 
+    background: #ffffff; /* Premium white background instead of heavy solid blue */
+    border-bottom: 1px solid #e5e5e5; /* Delicate boundary line */
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); /* Whisper-soft shadow */
+  }
+
+  #banner { 
+    background: #78a9d4; /* Team blue used cleanly as an accent alert bar */
+    text-decoration: none; 
+    color: #f9fbfc; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px; 
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center; 
+    padding: 12px 20px;
+    margin: 0;
+  }
+
+  #banner a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  .header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1000px; /* Aligns perfectly with your main content rows below */
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+
+  .header-container h1 { 
+    text-align: left; 
+    font-size: 16px; 
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #1a1a1a; /* Professional dark charcoal for the logo name */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0px; 
+  }
+
+  .navlinks { 
+    display: flex; 
+    gap: 24px; 
+    align-items: center; 
+  }
+
+  /* BASE LINK CLASS: Standard structural setup for all navbar options */
+  .navlinks a, .dropbtn, .dropdown-content a { 
+    text-decoration: none !important; 
+    color: #555555; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px; 
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative; /* Crucial anchor node for absolute layout lines */
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  /* Specific sizing layout overrides purely for interior options */
+  .dropdown-content a {
+    display: block; 
+    text-align: left; 
+    padding: 10px 20px; 
+    font-size: 12px;
+  }
+
+  /* --- SPROUTING HOVER UNDERLINES --- */
+
+  /* 1. Main Navigation Titles Underline Base */
+  .navlinks > a::after, .dropbtn::after {
+    content: "";
+    position: absolute;
+    bottom: -6px; /* Spacers bar perfectly below letters */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #78a9d4;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* 2. Dropdown List Options Underline Base */
+  .dropdown-content a::after {
+    content: "";
+    position: absolute;
+    bottom: 6px; 
+    left: 20px; /* Accounts gracefully for interior menu padding bounds */ 
+    width: calc(100% - 40px); 
+    height: 1px; 
+    background-color: #78a9d4;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* --- TRIGGER HOVER ACTIONS --- */
+
+  /* Uniform text color swap on hover */
+  .navlinks a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+    color: #78a9d4; 
+  }
+
+  /* Soft secondary highlight backdrop applied strictly to interior selectors */
+  .dropdown-content a:hover {
+    background-color: #f4f8fb; 
+  }
+
+  /* Instantly trigger center-outward horizontal line scale expansion */
+  .navlinks > a:hover::after, 
+  .dropdown:hover .dropbtn::after, 
+  .dropdown-content a:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Elegant white dropdown panels */
+  .dropdown { 
+    position: relative; 
+    display: inline-block; 
+  }
+
+  .dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #ffffff; 
+    min-width: 200px; 
+    box-shadow: 0px 8px 32px rgba(0,0,0,0.06); /* Floating container shadow */
+    border: 1px solid #e5e5e5;
+    z-index: 10; 
+    border-radius: 6px; /* Matches your text box corner radius */
+    top: calc(100% + 8px); /* Perfectly spaced gap below the header link */
+    left: -12px;
+    padding: 6px 0;
+  }
+
+  /* Invisible hover link bridge across visual gap to prevent abrupt menu closings */
+  .dropdown-content::before { 
+    content: ""; 
+    position: absolute; 
+    top: -12px; 
+    left: 0; 
+    width: 100%; 
+    height: 12px; 
+    background: transparent; 
+  }
+
+  .dropdown:hover .dropdown-content { 
+    display: block; 
+  }
+
+  /* Mobile Reframing */
+  @media (max-width:768px) {
+    #banner { display: none; }
+    .header-container { 
+      flex-direction: column; 
+      align-items: center; 
+      padding: 20px;
+    }
+    .navlinks { 
+      flex-direction: row; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 12px; 
+      margin-top: 15px; 
+    }
+    .dropdown { width: auto; text-align: center; }
+    .header-container h1 { text-align: center; }
+  }
+
+    </style>
+    </head>
+    <body>
+        <header>
+        <h1 id="banner">Join us in powering our next big season! <a href="#">Donate here!</a></h1>
+            <div class="header-container">
+                <h1>Mechanical Masterminds</h1>
+                <nav class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Outreach ▼</a>
+                        <div class="dropdown-content">
+                            <a href="2526outreach.html">25-26 Outreach</a>
+                            <a href="offseason.html">Offseason</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Seasons ▼</a>
+                        <div class="dropdown-content">
+                            <a href="decode.html">25-26 DECODE</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Donate/Sponsors ▼</a>
+                        <div class="dropdown-content">
+                            <a href="sponsorshiptiers.html">Sponsorship Tiers</a>
+                            <a href="2526sponsors.html">25-26 Sponsors</a>
+                            <a href="2627sponsors.html">26-27 Sponsors</a>
+                        </div>
+                    </div>
+                    <a href="bnb.html">B&B</a>
+                    <a href="contact.html">Contact Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Community Pages ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">FTC Scout</a>
+                            <a href="#">FTC Events</a>
+                            <a href="#">Orange Alliance</a>
+                            <a href="#">FTC Videos</a>
+                            
+                        </div>  
+                    </div>
+                    <a href="#">Log In</a>
+                    
+                </nav>
+            </div>
+            
+        
+        </header>
+    <h1 class="TitlePage">Contact Us</h1>
+    <hr>
+    <div class="row">
+        <div class="box image">
+            <img src = "media/images/placeholderimages/placeholder.webp" class="personpic">
+        </div>
+        <div class="box">
+            <p>
+                Contact Us: <br><br>
+
+                Outreach Team: <br><br>
+
+                jenna@team30329.org <br><br>
+
+                shriya@team30329.org <br><br>
+
+                Our Team: <br><br>
+
+                mechanicalmastermindsftc@gmail.com
+            </p>
+        </div>
+    </div>
+    <hr>
+<div class="row">
+    <div class="box">
+        <p class="TextInBox">
+            If you want to join our team or FIRST, <br><br>
+            use the buttons located to the right.
+        </p>   
+    </div>
+    <div class="box">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdm95mFJamOsQFvJufRDt-zMFxta82aOqDOkhSYQZuPAPNo4g/viewform" target="_blank">
+            <button type="button" id="TopButton">Joining Our Team</button>
+        </a>
+        <hr id="smol">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnh5U7uhqfwGFo-w5vjgkde7ZjgCOGX2tc_iYuO6rtzCoiGg/viewform" target="_blank">
+            <button type="button" Id="BottomButton">Joining FIRST</button>
+        </a>
+    </div> 
+</div> 
+<footer>
+    <hr id="foot">
+    <div id="boxFooter">
+        <p>&copy; 2026 MECHANICAL MASTERMINDS. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>  
+</body>
+</html>
