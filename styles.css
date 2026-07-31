@@ -24,8 +24,7 @@ body >:not(header) {
     display:flex;
     justify-content:space-between;
     gap:40px;
-    margin-bottom:50px;
-    
+    margin-bottom:50px;   
 }
 
 .box {
@@ -58,6 +57,9 @@ body >:not(header) {
     display:block;
     width:289px;
     height:282px;
+    border-radius: 4px; /*Rounded corners ig*/
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.435); /*Shadow */
+    border: 1px solid #004cff8f; /*Gemini said add a thin border for minimalist look*/
 }
 
 figure {
