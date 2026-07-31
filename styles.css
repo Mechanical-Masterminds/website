@@ -21,25 +21,30 @@ body >:not(header) {
 }*/
 
 .row {
-    display:flex;
-    /*justify-content:space-between;*/
-    gap:40px;
-    margin-bottom:50px;
-    flex-wrap:wrap;
-    
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; 
+  gap: 160px; 
+  max-width: 1000px; 
+  margin: 0 auto 60px auto; 
+  flex-wrap: nowrap; 
 }
 
 .box {
-    /*width:45%;*/
-    flex: 1 1 200px;
-    min-width:200px;
-    align-items:center;
-    display:flex;
+    flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; ;
 }
 
 .image {
-    display:flex;
-    justify-content:center;
+    flex: 0 0 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; 
 }
 
 .box h2 {
@@ -47,23 +52,40 @@ body >:not(header) {
 }
 
 .box p {
-    text-align:left;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal; 
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #333333;
+    padding: 24px 32px;
+    background-color: #f4f8fb; 
+    border: none;
+    border-left: 4px solid #78a9d4; 
+    border-radius: 6px; 
 }
 
-.image {
-    padding-left:5%;
-    padding-right:5%;
-    width:25%;
-    flex: 0 0 300px 300px;
+#boxFooter p {
+    text-align: center;
+    font-size: 11px; 
+    font-weight: normal;
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    color: #828282;
+    padding: 0; 
+    border: none; 
+    background: transparent; 
 }
 
 .personpic {
-    display:block;
-    width:289px;
-    height:282px;
-    border-radius: 4px; /*Rounded corners ig*/
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.435); /*Shadow */
-    border: 1px solid #004cff8f; /*Gemini said add a thin border for minimalist look*/
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 6px; 
+    border: 3px solid #c8d6e2; ; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 figure {
@@ -84,24 +106,75 @@ figcaption {
 }
 
 button {
-    background-color: #78a9d4;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #78a9d4;
+    border-radius: 4px;
+    color: #78a9d4;
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     width: 250px;
-    transition: all 0.2s ease;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover {
-    box-shadow: 0px 4px 12px #78a9d4;
-    background-color: #5e8cb3;
+    background-color: #78a9d4;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); 
+    transform: translateY(-2px);
 }
 .TitlePage {
-   
+    font-size:45px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #4a4a4a;;
+    margin: 40px 0 50px 0;
+    text-align: center;
+}
+
+hr{
+    border: none;
+    border-radius: 50px;
+    border-top: 1px solid #c3c3c3; 
+    margin-bottom: 50px;
+}
+
+footer{
+  margin: 80px auto 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.TextInBox {
+    margin-left: 32px;
+}
+
+.box p.TextInBox {
+  border: none;
+  border-left: 3px solid #78a9d4;
+  background-color: #f4f8fb;
+  border-radius: 6px;
+  padding: 24px 32px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+#foot{
+    border: none;
+    border-radius: 50px;
+    border-top: 1px solid #c3c3c3; 
+    margin-bottom: 50px;
+    margin-top: -50px
 }
