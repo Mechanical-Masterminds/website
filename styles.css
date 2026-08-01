@@ -59,10 +59,31 @@ body >:not(header) {
     letter-spacing: 0.02em;
     color: #333333;
     padding: 24px 32px;
-    background-color: #f4f8fb; 
+     background: linear-gradient(
+        -45deg,
+        #f4f8fb,
+        #ecf8ff,
+        #dff2ff,
+        #f5f9fc
+    );
+
+    background-size: 300% 300%;
+    animation: coolsubtleColors 10s ease-in-out infinite;
     border: none;
     border-left: 4px solid #78a9d4; 
     border-radius: 6px; 
+}
+
+@keyframes coolsubtleColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #boxFooter p {
@@ -131,9 +152,38 @@ button:hover {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #4a4a4a;;
+    color: #3f4b57;
     margin: 40px 0 40px 0;
     text-align: center;
+}
+
+.pagetitle {
+    background: linear-gradient(
+        -45deg,
+        #a4cbe8,
+        #c8e1f3,
+        #f5fbff,
+        #b7d8ef,
+        #e5f2fb
+    );
+    background-size:400% 400%;
+    animation: gradientFlow 30s ease infinite;
+    padding: 70px 20px;
+    margin: 0 0px 50px 0px; /* extends to page edges */
+    margin-bottom: 70px;
+    border-bottom: 2px solid #98c9f4;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 hr{
