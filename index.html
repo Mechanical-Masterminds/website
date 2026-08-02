@@ -187,7 +187,22 @@
     </section>
         <div class="row">
             <div class="box">
-                <div class="placeholder"></div>
+                <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Beach">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Mountains">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Forest">
+            </div>
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+<button class="carousel-btn next">&#10095;</button>
+    </div>
             </div>
             <div class="box">
                 <p>We are Team 30329, Mechanical Masterminds.
@@ -206,12 +221,42 @@
                 but we have learned from them and grown as a team.</p>
             </div>
             <div class="box">
-                <div class="placeholder"></div>
+                <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Beach">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Mountains">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Forest">
+            </div>
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+<button class="carousel-btn next">&#10095;</button>
+    </div>
             </div>
         </div>
         <div class="row">
             <div class="box">
-                <div class="placeholder"></div>
+                <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Beach">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Mountains">
+            </div>
+            <div class="carousel-slide">
+                <img src="media/images/placeholderimages/placeholder.webp" alt="Forest">
+            </div>
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+<button class="carousel-btn next">&#10095;</button>
+    </div>
             </div>
             <div class="box">
                 <p>We are excited for the new season and the 
@@ -224,5 +269,35 @@
         <div class="box">
         <p>We don't have any events coming up, so check back soon to see an updated list!</p>
         </div>
+        <script>
+document.querySelectorAll(".carousel-container").forEach(carousel => {
+
+    const track = carousel.querySelector(".carousel-track");
+    const slides = carousel.querySelectorAll(".carousel-slide");
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    carousel.querySelector(".next").addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    });
+
+    carousel.querySelector(".prev").addEventListener("click", () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
+        updateCarousel();
+    });
+
+});
+</script>
     </body>
 </html>
